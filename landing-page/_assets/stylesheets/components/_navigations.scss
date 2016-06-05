@@ -1,0 +1,54 @@
+
+
+
+.navigation {
+    @extend .list-unstyled;
+}
+
+
+
+// Transparent navbar
+
+.navbar-transparent {
+    background: transparent;
+    border: none;
+
+    .navbar-brand {
+        color: $inverted-color;
+        font-size: 2.5rem;
+
+        @media only screen and (min-width: $screen-sm) {
+            font-size: 3rem;
+        }
+
+        @include on-event {
+            color: $brand-color;
+        }
+    }
+
+// This is to get the mobile navbar show on the right
+    .navbar-header {
+        float: left;
+    }
+    .navbar-nav {
+        float: right!important;
+    }
+
+    .navbar-nav > li > a {
+        color: $inverted-muted-color;
+
+        @include on-event {
+            color: $white;
+        }
+
+    }
+}
+
+
+
+
+
+.footer-navigation {
+    @extend .navigation;
+    @extend .list-inline;
+}
