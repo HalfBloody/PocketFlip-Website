@@ -5,17 +5,43 @@
 ///////////////
 
 $white:                                 #fff;
-$gray:                                  #a6a6a6;
-$dark-gray:                             #363636;
+
+$light-blue:                            #b9cede;
+$blue:                                  #0084d2;
+$dark-blue:                             #0066a1;
+$red:                                   #f2444f;
+$yellow:                                #fdac39;
+$light-light-gray:                      #f4f8fb;
+$light-dark-gray:                       #edf2f5;
+$gray:                                  #80888c;
+$dark-gray:                             #354249;
+$green:                                 #25c306;
+
 
 // -----------------
 
-$body-color:                            $white;
+$brand-color:                           $blue;
+$secondary-color:                       $red;
+
+$body-color:                            $blue;
 $text-color:                            $dark-gray;
 $link-color:                            $dark-gray;
 $navigation-link-color:                 $gray;
 $navication-focus-outline-color:        $dark-gray;
 
+
+// Main color scheme
+
+$link-regular-color:                    $brand-color;
+$link-regular-hover-color:              darken($link-regular-color, 15%);
+$link-navigation-color:                 $text-color;
+$link-navigation-hover-color:           $brand-color;
+
+$inverted-color:                        $light-light-gray; $inverted-muted-color:                  rbga($light-light-gray, 0.75);
+
+// Background
+$blue-background:                       $blue;
+$light-dark-gray-background:            $light-dark-gray;
 
 
 //////////////
@@ -23,7 +49,7 @@ $navication-focus-outline-color:        $dark-gray;
 //////////////
 
 /// Regular font family
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Rambla', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
@@ -32,7 +58,8 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 $secondary-font-family: "Amatic SC", Helvetica, Arial, sans-serif !default;
 
 
-$body-size:                             1rem;
+$body-text-size:                        1.5rem;
+
 $navigation-size:                       0.75rem;
 $navigation-mobile-size:                1.5rem;
 
@@ -42,14 +69,14 @@ $headline-1-line-height:                5rem;
 $headline-2-size:                       3.125rem;
 $headline-2-line-height:                3.125rem;
 
-$headline-3-size:                       1.313rem;
-$headline-3-line-height:                1.313rem;
+$headline-3-size:                       2.2rem;
+$headline-3-line-height:                2.2rem;
 
 $headline-4-size:                       1rem;
 $headline-4-line-height:                1rem;
 
-$headline-5-size:                       0.85rem;
-$headline-5-line-height:                0.85rem;
+$headline-5-size:                       1rem;
+$headline-5-line-height:                1rem;
 
 $headline-6-size:                       0.62rem;
 $headline-6-line-height:                0.62rem;
@@ -67,7 +94,19 @@ $medium-spacing:                        3rem;
 $large-spacing:                         5rem;
 $extra-large-spacing:                   10rem;
 
+$section-spacing:                       3.5rem;
 
 ///////////////
 // NAVBAR //
 ///////////////
+
+$navbar-small-height:                   5rem;
+$navbar-medium-height:                  10rem;
+$nav-inverted-link-color:               $gray;
+
+
+///////////////
+// Border Radius //
+///////////////
+
+$box-radius:                            0.5rem;
