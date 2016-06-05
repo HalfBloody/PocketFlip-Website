@@ -7,7 +7,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Fonts  -->
-  <link href='https://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rambla:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 
   <!-- Stylesheet -->
   <link href="{% asset_path main.css %}" rel="stylesheet">
@@ -19,5 +19,5 @@
     <!-- Guard livereload temporary -->
     <script src="http://localhost:35729/livereload.js"></script>
   {% endif %}
-  
+
 </head>
