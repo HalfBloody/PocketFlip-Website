@@ -34,9 +34,16 @@ owner:
 # Jekyll config
 markdown: kramdown
 include:
+  # - .htaccess
   - _pages
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - Guardfile
+    - s3_website.yml
 
-
+# Local server config
+host: 0.0.0.0
 
 # Collectsions
 # collections:

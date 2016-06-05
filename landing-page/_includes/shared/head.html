@@ -15,6 +15,9 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
 
-  <!-- Guard livereload temporary -->
+  {% if jekyll.environment == "development" %}
+    <!-- Guard livereload temporary -->
     <script src="http://localhost:35729/livereload.js"></script>
+  {% endif %}
+  
 </head>
