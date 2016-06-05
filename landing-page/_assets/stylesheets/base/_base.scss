@@ -1,0 +1,34 @@
+
+
+
+// Styling the selection of text
+::selection {
+  background: $secondary-color; /* WebKit/Blink Browsers */
+  color: $light-light-gray;
+}
+::-moz-selection {
+  background: $secondary-color; /* Gecko Browsers */
+  color: $light-light-gray;
+}
+
+
+body {
+  background: $body-color;
+  color: $text-color;
+  font-size: $body-text-size;
+  font-family: $text-font-stack;
+}
+
+p {
+  font-size: $body-text-size;
+}
+
+a {
+  color: $link-regular-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $link-regular-hover-color;
+    text-decoration: underline;
+  }
+}
