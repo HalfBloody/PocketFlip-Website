@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'jekyll-assets'
+gem 'autoprefixer-rails'
+gem 'uglifier'
+gem 'jekyll-sitemap'
+
+# Deployment
+gem 's3_website'
+
+# Watching files for instant reload
+gem 'guard'
+gem 'guard-livereload'
