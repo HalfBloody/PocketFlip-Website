@@ -26,10 +26,12 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/sections';
 
 // 5. Components
 @import
   'components/buttons',
-  'components/social-links',
-  'components/modals';
+  'components/modals',
+  'components/navigations',
+  'components/rows';
