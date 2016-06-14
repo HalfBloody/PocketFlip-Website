@@ -49,18 +49,19 @@
 .btn-app-store {
     @extend .btn-default;
 
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
 
     .btn-icon {
         @extend .icon-large;
         display: inline-block;
         float: left;
-        margin-top: 0.4rem;
+        margin-top: 0.7rem;
     }
 
     p {
-        margin-left: 5rem;
+        margin-left: 5.5rem;
         margin-bottom: 0;
+        font-size: 1.75rem;
     }
     span {
         text-align: left;
@@ -69,7 +70,7 @@
 
         &:first-child {
             opacity: 0.75;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     }
 }
