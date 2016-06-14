@@ -1,0 +1,26 @@
+
+
+.business-image {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    max-width: 55rem;
+    display: none;
+
+    @media only screen and (min-width: $screen-sm) {
+        display: block;
+        right: -25%;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        right: 0;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+        right: 5%;
+    }
+
+    > img {
+        max-width: 100%;
+    }
+}
