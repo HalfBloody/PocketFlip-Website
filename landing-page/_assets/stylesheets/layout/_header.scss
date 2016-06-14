@@ -3,30 +3,30 @@
 // Landing page header
 .landing-header {
     background: $blue-background;
+    background-image: $blue-gradient-background;
     margin-top: -$navbar-medium-height - 0.5rem;
     padding-top: $large-spacing + 2.5;
     padding-bottom: $large-spacing;
     color: $inverted-color;
 
     @media only screen and (min-width: $screen-sm) {
-        padding-top: $extra-large-spacing;
+        padding-top: $extra-large-spacing + 2.5;
     }
 
     h1 {
         text-shadow: 0px 15px 15px rgba(0, 0, 0, 0.04),6px 6px 14px rgba(0, 0, 0, 0.13);
-        margin-bottom: $medium-spacing;
+        margin-bottom: $large-spacing;
 
         @media only screen and (min-width: $screen-sm) {
-            margin-bottom: $large-spacing;
+            margin-bottom: $large-spacing + 2.5;
         }
     }
 
     .feature-box {
 
         > img {
-            margin: 0 auto;
-            max-height: 7.5rem;
-            opacity: 0.75;
+            // margin: 0 auto;
+            height: 11rem;
         }
 
         p {
