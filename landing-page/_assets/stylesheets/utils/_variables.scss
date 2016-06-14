@@ -9,6 +9,7 @@ $white:                                 #fff;
 $light-blue:                            #b9cede;
 $blue:                                  #0084d2;
 $dark-blue:                             #0066a1;
+$light-black:                           #2a2f32;
 $red:                                   #f2444f;
 $yellow:                                #fdac39;
 $light-light-gray:                      #f4f8fb;
@@ -25,6 +26,7 @@ $secondary-color:                       $red;
 
 $body-color:                            $blue;
 $text-color:                            $dark-gray;
+$muted-color:                           fade-out($text-color, 0.25);
 $link-color:                            $dark-gray;
 $navigation-link-color:                 $gray;
 $navication-focus-outline-color:        $dark-gray;
@@ -37,7 +39,7 @@ $link-regular-hover-color:              darken($link-regular-color, 15%);
 $link-navigation-color:                 $text-color;
 $link-navigation-hover-color:           $brand-color;
 
-$inverted-color:                        $light-light-gray; $inverted-muted-color:                  rbga($light-light-gray, 0.75);
+$inverted-color:                        $light-light-gray; $inverted-muted-color:                  fade-out($light-light-gray, 0.25);
 
 // Background
 $blue-background:                       $blue;
@@ -59,27 +61,37 @@ $secondary-font-family: "Amatic SC", Helvetica, Arial, sans-serif !default;
 
 
 $body-text-size:                        1.5rem;
+$body-text-line-height:                 1.5rem;
+
+$lead-text-size:                        2rem;
+$lead-text-line-height:                 3rem;
 
 $navigation-size:                       0.75rem;
 $navigation-mobile-size:                1.5rem;
 
 $headline-1-size:                       5rem;
 $headline-1-line-height:                5rem;
+$headline-1-margin-bottom:              3rem;
 
 $headline-2-size:                       3.125rem;
 $headline-2-line-height:                3.125rem;
+$headline-2-margin-bottom:              2.5rem;
 
 $headline-3-size:                       2.2rem;
 $headline-3-line-height:                2.2rem;
+$headline-3-margin-bottom:              2rem;
 
 $headline-4-size:                       1rem;
 $headline-4-line-height:                1rem;
+$headline-4-margin-bottom:              1.5rem;
 
 $headline-5-size:                       1rem;
 $headline-5-line-height:                1rem;
+$headline-5-margin-bottom:              1.5rem;
 
 $headline-6-size:                       0.62rem;
 $headline-6-line-height:                0.62rem;
+$headline-6-margin-bottom:              1.5rem;
 
 
 
@@ -94,14 +106,14 @@ $medium-spacing:                        3rem;
 $large-spacing:                         5rem;
 $extra-large-spacing:                   10rem;
 
-$section-spacing:                       3.5rem;
+$section-spacing:                       7.5rem;
 
 ///////////////
 // NAVBAR //
 ///////////////
 
 $navbar-small-height:                   5rem;
-$navbar-medium-height:                  10rem;
+$navbar-medium-height:                  7rem;
 $nav-inverted-link-color:               $gray;
 
 
@@ -110,3 +122,28 @@ $nav-inverted-link-color:               $gray;
 ///////////////
 
 $box-radius:                            0.5rem;
+$big-button-radius:                     0.75rem;
+
+
+///////////////
+// Buttons //
+///////////////
+
+$btn-primary-color:                     $inverted-color;
+$btn-primary-bg:                        $brand-primary;
+$btn-primary-border:                    $brand-primary;
+
+$btn-dark-color:                        $inverted-color;
+$btn-dark-bg:                           $light-black;
+$btn-dark-border:                       $light-black;
+
+$btn-padding-lg-horizontal:             $large-spacing + 2.5rem;
+
+///////////////
+// Effects //
+///////////////
+
+// Transition timings
+$quick-transition:                      0.1s;
+$normal-transition:                     0.3s;
+$long-transition:                       1s;
