@@ -4,3 +4,13 @@
     @extend .row;
     padding-bottom: 5rem;
 }
+
+.header-info-row {
+    @extend .row;
+    margin-top: $medium-spacing;
+}
+
+.row-with-space {
+    @extend .row;
+    margin-bottom: $extra-large-spacing;
+}
