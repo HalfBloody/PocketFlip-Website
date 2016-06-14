@@ -27,6 +27,7 @@
 
 .section-light-gray {
     @extend .section;
+    overflow: hidden;
     background: $light-dark-gray-background;
 }
 
