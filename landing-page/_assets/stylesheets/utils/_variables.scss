@@ -43,6 +43,8 @@ $inverted-color:                        $light-light-gray; $inverted-muted-color
 
 // Background
 $blue-background:                       $blue;
+$blue-gradient-background:              linear-gradient( 360deg, rgb(0,117,186) 0%, rgb(0,125,198) 30%, rgb(0,132,210) 100%);
+
 $light-dark-gray-background:            $light-dark-gray;
 
 
@@ -69,20 +71,20 @@ $lead-text-line-height:                 3rem;
 $navigation-size:                       0.75rem;
 $navigation-mobile-size:                1.5rem;
 
-$headline-1-size:                       5rem;
-$headline-1-line-height:                5rem;
+$headline-1-size:                       5.75rem;
+$headline-1-line-height:                6rem;
 $headline-1-margin-bottom:              3rem;
 
 $headline-2-size:                       3.125rem;
 $headline-2-line-height:                3.125rem;
 $headline-2-margin-bottom:              2.5rem;
 
-$headline-3-size:                       2.2rem;
-$headline-3-line-height:                2.2rem;
+$headline-3-size:                       2.5rem;
+$headline-3-line-height:                2.5rem;
 $headline-3-margin-bottom:              2rem;
 
-$headline-4-size:                       1rem;
-$headline-4-line-height:                1rem;
+$headline-4-size:                       2rem;
+$headline-4-line-height:                2rem;
 $headline-4-margin-bottom:              1.5rem;
 
 $headline-5-size:                       1rem;
