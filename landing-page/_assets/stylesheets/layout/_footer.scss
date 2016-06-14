@@ -1,0 +1,24 @@
+
+
+
+.footer-section {
+    line-height: $body-text-line-height + 2 ;
+    color: fade-out($inverted-muted-color, 0.25);
+    border-bottom: 0.5rem solid $blue;
+
+    @media only screen and (min-width: $screen-sm) {
+        line-height: $body-text-line-height;
+    }
+
+    p {
+        margin: 0 0 $normal-spacing 0;
+        padding-bottom: $normal-spacing;
+        border-bottom: 1px solid fade-out($inverted-color, 0.9);
+
+        @media only screen and (min-width: $screen-sm) {
+            border-bottom: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
