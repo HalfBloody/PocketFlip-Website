@@ -8,17 +8,19 @@
 
 .navbar {
     min-height: $navbar-medium-height;
+    padding-top: $small-spacing;
 }
 
 .navbar-brand {
     @extend .text-bold;
     @extend .text-italic;
     font-size: 2rem;
+    font-weight: 400;
     height: $navbar-medium-height;
     line-height: $navbar-medium-height/2 + 0.5;
 
     @media only screen and (min-width: $screen-sm) {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     img {
@@ -26,6 +28,10 @@
         max-height: 3.5rem;
         margin-right: $small-spacing;
         @include transition(all, $quick-transition, ease-out);
+
+        @media only screen and (min-width: $screen-sm) {
+            max-height: 4.5rem;
+        }
     }
 }
 
