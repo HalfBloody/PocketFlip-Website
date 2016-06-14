@@ -1,0 +1,63 @@
+
+// Generla Section styles
+.section {
+    padding: $section-spacing 0;
+    background: $light-light-gray;
+}
+
+
+// Color sections
+.section-blue {
+    @extend .section;
+    background: $blue-background;
+
+    a {
+        color: $light-light-gray;
+    }
+}
+
+.section-light-black {
+    @extend.section;
+    background: $light-black;
+
+    a {
+        color: $light-light-gray;
+    }
+}
+
+.section-light-gray {
+    @extend .section;
+    background: $light-dark-gray-background;
+}
+
+.section-dark-gray {
+    @extend .section;
+    background: $dark-gray;
+
+    &.connect-bg {
+        background: $dark-gray; // fallback
+        background: url('../images/connect-bg.jpg') no-repeat;
+        background-size: cover;
+        background-position: 25% 50%;
+
+        @media only screen and (min-width: $screen-sm) {
+            background-position: 100% 50%;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $inverted-color;
+    }
+
+    p {
+        color: $inverted-muted-color;
+    }
+}
+
+
+// Footer section
+.footer-section {
+    @extend .section-light-black;
+
+    padding: $medium-spacing 0;
+}
