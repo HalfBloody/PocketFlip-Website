@@ -6,31 +6,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: $headline-1-size;
-    line-height: $headline-1-line-height;
+    font-size: $headline-1-size - 1;
+    line-height: $headline-1-line-height - 1;
+    margin-bottom: $headline-1-margin-bottom;
+
+    @media only screen and (min-width: $screen-sm) {
+        font-size: $headline-1-size;
+        line-height: $headline-1-line-height;
+    }
 }
 
 h2 {
     font-size: $headline-2-size;
     line-height: $headline-2-line-height;
+    margin-bottom: $headline-2-margin-bottom;
 }
 
 h3 {
     font-size: $headline-3-size;
     line-height: $headline-3-line-height;
+    margin-bottom: $headline-3-margin-bottom;
 }
 
 h4 {
     font-size: $headline-4-size;
     line-height: $headline-4-line-height;
+    margin-bottom: $headline-4-margin-bottom;
 }
 
 h5 {
     font-size: $headline-5-size;
     line-height: $headline-5-line-height;
+    margin-bottom: $headline-5-margin-bottom;
 }
 
 h6 {
     font-size: $headline-6-size;
     line-height: $headline-6-line-height;
+    margin-bottom: $headline-6-margin-bottom;
+}
+
+a {
+    @include transition(all, $quick-transition, ease-out);
+}
+
+.lead {
+    font-size: $lead-text-size;
+    line-height: $lead-text-line-height;
 }
