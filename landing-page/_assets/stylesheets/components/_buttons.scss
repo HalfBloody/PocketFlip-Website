@@ -1,14 +1,85 @@
 
 
+.btn {
+    @include transition(all, $quick-transition, ease-out);
+    border-radius: $big-button-radius;
+
+    &,
+    &:active,
+    &.active {
+    &:focus,
+    &.focus {
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1),0px 6px 14px rgba(0, 0, 0, 0.18);
+    }
+  }
+
+    &:hover,
+    &:focus,
+    &.focus {
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1),0px 6px 14px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.btn-lg {
+    @include button-size($padding-large-vertical, $btn-padding-lg-horizontal, $font-size-large, $line-height-large, $big-button-radius);
+}
+
+.btn-with-spacing {
+    margin-top: $normal-spacing;
+}
+
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+.btn-dark {
+  @include button-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
+}
+
+.btn-primary-outline {
+    @extend .btn-with-spacing;
+    @include button-outline($secondary-color, $inverted-color, fade-out($secondary-color, 1), $secondary-color);
+}
+
+.btn-inverted-outline {
+    @extend .btn-with-spacing;
+    @include button-outline($inverted-muted-color, $inverted-muted-color, fade-out($inverted-muted-color, 1), $inverted-muted-color);
+}
+
 .btn-app-store {
-    padding: 1rem 2rem;
+    @extend .btn-default;
+
+    padding: 1.5rem 3rem;
+
+    .btn-icon {
+        @extend .icon-large;
+        display: inline-block;
+        float: left;
+        margin-top: 0.4rem;
+    }
+
+    p {
+        margin-left: 5rem;
+        margin-bottom: 0;
+    }
     span {
+        text-align: left;
         display: block;
         text-transform: uppercase;
 
         &:first-child {
             opacity: 0.75;
+            font-size: 1.2rem;
         }
     }
+}
 
+.btn-app-store-primary {
+    @extend .btn-app-store;
+    @extend .btn-primary;
+}
+
+.btn-app-store-dark {
+    @extend .btn-app-store;
+    @extend .btn-dark;
 }
