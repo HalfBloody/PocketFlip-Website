@@ -2,7 +2,7 @@
 
 .header-title-row {
     @extend .row;
-    padding-bottom: 5rem;
+    padding-bottom: 7.5rem;
 }
 
 .header-info-row {
@@ -12,5 +12,6 @@
 
 .row-with-space {
     @extend .row;
+    position: relative;
     margin-bottom: $extra-large-spacing;
 }
