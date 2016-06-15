@@ -5,12 +5,26 @@
     background: $blue-background;
     background-image: $blue-gradient-background;
     margin-top: -$navbar-medium-height - 0.5rem;
-    padding-top: $large-spacing + 2.5;
-    padding-bottom: $large-spacing;
+    padding-top: $large-spacing + 2;
     color: $inverted-color;
 
     @media only screen and (min-width: $screen-sm) {
-        padding-top: $extra-large-spacing + 2.5;
+        padding-top: $extra-large-spacing + 1.5;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        border-width: 0 100vw 2rem 0;
+        border-style: solid;
+        border-color: transparent  transparent $light-light-gray transparent;
+        width: 100%;
+        height: 2rem;
+
+        @media only screen and (min-width: $screen-sm) {
+            border-width: 0 100vw 8rem 0;
+            height: 8rem;
+        }
     }
 
     h1 {
@@ -18,19 +32,47 @@
         margin-bottom: $large-spacing;
 
         @media only screen and (min-width: $screen-sm) {
-            margin-bottom: $large-spacing + 2.5;
+            font-size: 5.75rem;
+            margin-bottom: $large-spacing + 1.5;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+            font-size: 6.75rem;
         }
     }
 
     .feature-box {
+        text-align: center;
+        padding-bottom: $large-spacing;
 
-        > img {
-            // margin: 0 auto;
-            height: 11rem;
+        .box-mobile {
+            @media only screen and (max-width: $screen-sm) {
+                max-width: 45rem;
+                margin: 0 auto;
+            }
+        }
+
+        .img-responsive {
+            padding-bottom: $normal-spacing + 1;
+        }
+
+        h2 {
+            margin-bottom: 1.75rem;
         }
 
         p {
+            margin: 0 auto;
+            font-size: 1.75rem;
             opacity: 0.75;
+            width: 80%;
+
+            @media only screen and (min-width: $screen-sm) {
+                width: 100%;
+            }
+
+            @media only screen and (min-width: $screen-md) {
+                width: 75%;
+            }
         }
     }
 

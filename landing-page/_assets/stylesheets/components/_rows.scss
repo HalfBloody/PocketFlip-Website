@@ -2,7 +2,11 @@
 
 .header-title-row {
     @extend .row;
-    padding-bottom: 7.5rem;
+    padding-bottom: 4rem;
+
+    @media only screen and (min-width: $screen-sm) {
+        padding-bottom: 6.5rem;
+    }
 }
 
 .header-info-row {

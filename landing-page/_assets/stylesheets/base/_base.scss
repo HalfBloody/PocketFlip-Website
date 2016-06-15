@@ -17,6 +17,7 @@ body {
   color: $text-color;
   font-size: $body-text-size;
   font-family: $text-font-stack;
+  overflow-x: hidden;
 }
 
 p {

@@ -9,6 +9,7 @@
 .navbar {
     min-height: $navbar-medium-height;
     padding-top: $small-spacing;
+    z-index:1;
 }
 
 .navbar-brand {
