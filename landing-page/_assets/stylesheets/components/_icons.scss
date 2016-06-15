@@ -7,11 +7,8 @@
 }
 
 .content-icon {
-    padding-right: $normal-spacing - 0.5;
-
-    > svg {
-        padding-top: 0.5rem;
-    }
+    padding-right: $normal-spacing;
+    float: left;
 }
 
 .icon-small {
