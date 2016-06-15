@@ -48,18 +48,19 @@
 
 .btn-app-store {
     @extend .btn-default;
+    font-family: Helvetica, sans-serif;
 
-    padding: 1rem 3rem;
+    padding: 1.25rem 3.25rem 1.25rem 2.5rem;
 
     .btn-icon {
         @extend .icon-large;
         display: inline-block;
         float: left;
-        margin-top: 0.7rem;
+        margin-top: 0.5rem;
     }
 
     p {
-        margin-left: 5.5rem;
+        margin-left: 4.5rem;
         margin-bottom: 0;
         font-size: 1.75rem;
     }
@@ -69,8 +70,13 @@
         text-transform: uppercase;
 
         &:first-child {
-            opacity: 0.75;
+            opacity: 1;
+            font-weight: 100;
             font-size: 1.4rem;
+        }
+        &:last-child {
+            font-size: 1.335rem;
+            font-weight: 800;
         }
     }
 }
