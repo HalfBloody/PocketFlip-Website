@@ -1,8 +1,12 @@
 
 // Generla Section styles
 .section {
-    padding: $section-spacing 0;
+    padding: $large-spacing 0;
     background: $light-light-gray;
+
+    @media only screen and (min-width: $screen-sm) {
+        padding: $section-spacing 0;
+    }
 }
 
 
@@ -34,17 +38,6 @@
 .section-dark-gray {
     @extend .section;
     background: $dark-gray;
-
-    &.connect-bg {
-        background: $dark-gray; // fallback
-        background: url('../images/connect-bg.jpg') no-repeat;
-        background-size: cover;
-        background-position: 25% 50%;
-
-        @media only screen and (min-width: $screen-sm) {
-            background-position: 100% 50%;
-        }
-    }
 
     h1, h2, h3, h4, h5, h6 {
         color: $inverted-color;

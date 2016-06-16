@@ -1,0 +1,163 @@
+
+
+
+// Landing page header
+.landing-header {
+    background: $blue-background;
+    background-image: $blue-gradient-background;
+    margin-top: -$navbar-medium-height - 0.5rem;
+    padding-top: $large-spacing + 2;
+    color: $inverted-color;
+
+    @media only screen and (min-width: $screen-sm) {
+        padding-top: $extra-large-spacing + 1.5;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        border-width: 0 100vw 2rem 0;
+        border-style: solid;
+        border-color: transparent  transparent $light-light-gray transparent;
+        width: 100%;
+        height: 2rem;
+
+        @media only screen and (min-width: $screen-sm) {
+            border-width: 0 100vw 8rem 0;
+            height: 8rem;
+        }
+    }
+
+    h1 {
+        text-shadow: 0px 15px 15px rgba(0, 0, 0, 0.04),6px 6px 14px rgba(0, 0, 0, 0.13);
+        margin-bottom: $large-spacing;
+
+        @media only screen and (min-width: $screen-sm) {
+            font-size: 5.75rem;
+            margin-bottom: $large-spacing + 1.5;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+            font-size: 6.75rem;
+        }
+    }
+
+    .feature-box {
+        @extend .text-center;
+
+        .box-mobile {
+            @media only screen and (max-width: $screen-sm) {
+                max-width: 45rem;
+                margin: 0 auto;
+            }
+        }
+
+        .img-responsive {
+            padding-bottom: $normal-spacing + 1;
+        }
+
+        h2 {
+            margin-bottom: 1.75rem;
+        }
+
+        p {
+            margin: 0 auto;
+            font-size: 1.75rem;
+            opacity: 0.75;
+            width: 80%;
+
+            @media only screen and (min-width: $screen-sm) {
+                width: 100%;
+            }
+
+            @media only screen and (min-width: $screen-md) {
+                width: 75%;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+// How it works section styling
+.how-it-works {
+    padding-top: $medium-spacing;
+    
+    // Arrow bg triangle
+    // padding-bottom: 0;
+    //
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     border-width: 0 50vw 4rem 50vw;
+    //     border-style: solid;
+    //     border-color: transparent transparent $light-dark-gray transparent;
+    //     width: 100%;
+    //     height: 4rem;
+    //     margin-top: 4rem;
+    // }
+
+    .row:first-child h2 {
+        font-size: 4.5rem;
+        margin-bottom: $large-spacing;
+    }
+
+    .feature-box {
+        @extend .text-center;
+
+        .img-responsive {
+            margin: 0 auto;
+
+            @media only screen and (min-width: $screen-sm) {
+                max-height: 12rem;
+            }
+
+            @media only screen and (min-width: $screen-md) {
+                max-height: 15rem;
+            }
+
+            @media only screen and (min-width: $screen-lg) {
+                max-height: 18rem;
+            }
+        }
+
+        h3 {
+            @extend .text-muted;
+        }
+    }
+
+    .btn-app-store-dark {
+        margin-bottom: $normal-spacing;
+    }
+}
+
+
+
+
+
+.business {
+
+    .feature-box {
+        padding-bottom: $normal-spacing;
+    }
+
+}
+
+
+
+
+.connect {
+    padding-bottom: $large-spacing + 1.5;
+    background: $dark-gray; // fallback
+    background: url('../images/connect-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+
+    @media only screen and (min-width: $screen-sm) {
+        background-position: 100% 50%;
+        padding-bottom: $section-spacing + 1.5;
+    }
+}
