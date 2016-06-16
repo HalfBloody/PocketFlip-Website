@@ -17,5 +17,9 @@
 .row-with-space {
     @extend .row;
     position: relative;
-    margin-bottom: $extra-large-spacing;
+    margin-bottom: $large-spacing;
+
+    @media only screen and (min-width: $screen-sm) {
+        margin-bottom: $extra-large-spacing;
+    }
 }
