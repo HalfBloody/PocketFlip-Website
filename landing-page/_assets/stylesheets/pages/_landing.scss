@@ -85,7 +85,7 @@
 // How it works section styling
 .how-it-works {
     padding-top: $medium-spacing;
-    
+
     // Arrow bg triangle
     // padding-bottom: 0;
     //
@@ -124,7 +124,7 @@
             }
         }
 
-        h3 {
+        h4 {
             @extend .text-muted;
         }
     }
@@ -140,10 +140,21 @@
 
 .business {
 
-    .feature-box {
-        padding-bottom: $normal-spacing;
+    .lead {
+        @media only screen and (min-width: $screen-lg){
+            width: 75%;
+        }
     }
 
+    .feature-box {
+        padding-bottom: $normal-spacing;
+
+        > p {
+            @media only screen and (min-width: $screen-lg) {
+                width: 85%;
+            }
+        }
+    }
 }
 
 
@@ -158,6 +169,6 @@
 
     @media only screen and (min-width: $screen-sm) {
         background-position: 100% 50%;
-        padding-bottom: $section-spacing + 1.5;
+        padding: $extra-large-spacing 0 ($extra-large-spacing + 1.5) 0;
     }
 }
