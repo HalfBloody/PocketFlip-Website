@@ -8,15 +8,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/logo-icon.svg" alt="" />{{site.title}}</a>
+      <a class="navbar-brand" href="#"><img src="{{ site.logo-url }}" alt="{{ site.title }} logo" />{{site.title}}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="main-menu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">How it Works</a></li>
-        <li><a href="#">PocketFlip Business</a></li>
-        <li><a href="#">Become a Media Partner</a></li>
+        {% for link in site.data.navigations.main %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
