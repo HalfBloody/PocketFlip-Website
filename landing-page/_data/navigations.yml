@@ -1,0 +1,23 @@
+
+
+# main navbar links
+main:
+  - title: "How it Works"
+    url: "#"
+
+  - title: "PocketFlip Business"
+    url: "#"
+
+  - title: "Become a Media Partner"
+    url: "#"
+
+# Footer navigation links
+footer:
+  - title: "Link 1"
+    url: "#"
+
+  - title: "Link 1"
+    url: "#"
+
+  - title: "Link 1"
+    url: "#"
