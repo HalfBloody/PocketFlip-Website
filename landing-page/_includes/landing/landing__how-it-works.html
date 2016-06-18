@@ -1,0 +1,33 @@
+<div class="section how-it-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>{{ page.how-section[0].title }}</h2>
+      </div>
+    </div>
+    <!-- Row with feature stuff -->
+    <div class="row">
+      {% for feature in page.how-section[1].features %}
+        <div class="col-xs-12 col-sm-4 feature-box">
+          <img class="img-responsive" src="{{ feature.img }}" alt="{{ feature.title }} image" />
+          <h4>{{ feature.title }}</h4>
+            {% if feature.content %}
+              <p>{{ feature.content }}</p>
+            {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <a href="{{ page.app-store-url }}" class="btn btn-app-store-dark">
+          <svg class="btn-icon">
+            <use xlink:href="#apple-logo"></use>
+          </svg>
+          <p class="btn-text">
+            <span>Download from</span> <span>Apple App Store</span>
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

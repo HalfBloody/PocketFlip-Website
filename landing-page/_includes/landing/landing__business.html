@@ -1,0 +1,27 @@
+<div class="section-light-gray business">
+  <div class="container">
+    <div class="row-with-space">
+      <div class="col-xs-12 col-sm-6 col-md-5">
+        <h2>{{ page.business-section[0].title }}</h2>
+        <p class="lead text-muted">{{ page.business-section[0].lead }}</p>
+        <a href="{{ page.contact-url }}" class="btn btn-lg btn-primary-outline">Contact us</a>
+      </div>
+      <div class="business-image">
+        <img src="images/business-bg.png" alt="PocketFlip business iphone image" />
+      </div>
+    </div>
+    <div class="row text-muted">
+      {% for feature in page.business-section[1].features %}
+        <div class="col-xs-12 col-sm-4 col-lg-4 feature-box">
+          <h5>
+            <span class="content-icon">
+                <svg class="icon-large">
+                  <use xlink:href="{{ feature.img }}"></use>
+                </svg>
+            </span>{{ feature.title }}</h5>
+          <p>{{ feature.content }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
