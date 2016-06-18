@@ -4,8 +4,10 @@
   <body>
     {% include shared/symbols.html %}
     {% include shared/nav.html %}
-    {% include modules/landing__header.html %}
-    {% include modules/landing__sections.html %}
+    <main>
+      {% include landing/landing__header.html %}
+      {% include landing/landing__sections.html %}
+    </main>
     {% include shared/footer.html %}
     {% include shared/footer-scripts.html %}
   </body>

@@ -1,0 +1,30 @@
+<header class="landing-header">
+  <div class="container">
+    <!-- Header title -->
+    <div class="header-title-row">
+      <div class="col-xs-12 text-center">
+        <h1>{{ page.header[0].title }}</h1>
+        <a href="{{ page.app-store-url }}" class="btn btn-app-store-primary">
+          <svg class="btn-icon">
+            <use xlink:href="#apple-logo"></use>
+          </svg>
+          <p class="btn-text">
+            <span>Download from</span> <span>Apple App Store</span>
+          </p>
+        </a>
+      </div>
+    </div>
+    <!-- Header features content -->
+    <div class="header-info-row">
+      {% for feature in page.header[1].features %}
+        <div class="col-xs-12 col-sm-4 feature-box">
+          <div class="box-mobile">
+            <img class="img-responsive" src="{{ feature.img }}" alt="{{ feature.title }} image" />
+            <h3>{{ feature.title }}</h3>
+            <p class="">{{ feature.content }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</header>
