@@ -12,7 +12,7 @@ header:
     - img: "images/f-dream-phone.png"
       title: "Fulfill your dreams"
       content: "Get gift cards and discounts for your favorite shop. Sweeeeet!!!!"
-    - img: "images/f-game-phone.png"
+    - img: "images/f-giveaway-phone.png"
       title: "Amazing Giveaways"
       content: "Win top prizes in our regular giveway. May the luck be with you."
 
