@@ -26,13 +26,13 @@ All the structural data, like navigations, their links and name of the tabs are 
 
 This folder contains all the partials which are then called in the pages or templates.
 
-'Shared' - the partials which are shared across multiple pages. Like navigation, footer....
+`Shared` - the partials which are shared across multiple pages. Like navigation, footer....
 
-'Modules' - the partials which are specific to a certain template like articles.
+`Modules` - the partials which are specific to a certain template like articles.
 
-'Landing' - the partials which are specific for the landing page.
+Landing` - the partials which are specific for the landing page.
 
-'Analytics' - partials for the different analytics. **note** not fully implemented yet
+`Analytics` - partials for the different analytics. **note** not fully implemented yet
 
 
 ## **_layouts** folder
@@ -71,10 +71,10 @@ This can be changed in the _data folder in the navigations.yml
 
 **Landing Page**
 The layout for the landing page is found in the _layouts as landing.html. It consist of these partials:
-- 'landing__header.html' - the main header area with three featured columns
-- 'landing__how-it-works.html' - the how it work section with three featured columns
-- 'landing__business.html' - the business section with lead section and the three featured columns
-- 'landing__connect.html' - the connect section with the lead section.
+- `landing__header.html` - the main header area with three featured columns
+- `landing__how-it-works.html` - the how it work section with three featured columns
+- `landing__business.html` - the business section with lead section and the three featured columns
+- `landing__connect.html` - the connect section with the lead section.
 
 ---
 
@@ -82,22 +82,21 @@ The layout for the landing page is found in the _layouts as landing.html. It con
 
 **Here is a list of the variables and what they do in the code:**
 
-'app-store-url:' "#"
-'contact-url:' "#"
+`app-store-url:` - 
+`contact-url:` - 
+`header:`
+  - `title:` "Flip Tasks Into Free Rewards"
+  - `features:`
+    - `img:` "images/f-game-phone.png"
+      `title:` "Bump Your Game"
+      `content:` "Upgrade your base and buy your favorite game. Be unstopable."
 
-'header:'
-  - 'title:' "Flip Tasks Into Free Rewards"
-  - 'features:'
-    - 'img:' "images/f-game-phone.png"
-      'title:' "Bump Your Game"
-      'content:' "Upgrade your base and buy your favorite game. Be unstopable."
-
-'how-section:'
-  - 'title:' "How it works"
-  - 'features:'
-    - 'img:' "images/download.png"
-      'title:' "1. Download PocketFlip"
-      'content:'
+`how-section:`
+  - `title:` "How it works"
+  - `features:`
+    - `img:` "images/download.png"
+      `title:` "1. Download PocketFlip"
+      `content:`
 
 'business-section:'
   - 'title:' "User PocketFlip Business"
