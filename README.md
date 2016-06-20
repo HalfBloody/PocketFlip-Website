@@ -30,7 +30,7 @@ This folder contains all the partials which are then called in the pages or temp
 
 `Modules` - the partials which are specific to a certain template like articles.
 
-Landing` - the partials which are specific for the landing page.
+`Landing` - the partials which are specific for the landing page.
 
 `Analytics` - partials for the different analytics. **note** not fully implemented yet
 
@@ -71,45 +71,70 @@ This can be changed in the _data folder in the navigations.yml
 
 **Landing Page**
 The layout for the landing page is found in the _layouts as landing.html. It consist of these partials:
-- `landing__header.html` - the main header area with three featured columns
-- `landing__how-it-works.html` - the how it work section with three featured columns
-- `landing__business.html` - the business section with lead section and the three featured columns
-- `landing__connect.html` - the connect section with the lead section.
+
+`landing__header.html` - the main header area with three featured columns
+
+`landing__how-it-works.html` - the how it work section with three featured columns
+
+`landing__business.html` - the business section with lead section and the three featured columns
+
+`landing__connect.html` - the connect section with the lead section.
 
 ---
 
 
 
-**Here is a list of the variables and what they do in the code:**
+**Here is a list of the variables and what they do in the landing page code:**
 
-`app-store-url:` - 
-`contact-url:` - 
-`header:`
-  - `title:` "Flip Tasks Into Free Rewards"
-  - `features:`
-    - `img:` "images/f-game-phone.png"
-      `title:` "Bump Your Game"
-      `content:` "Upgrade your base and buy your favorite game. Be unstopable."
+`app-store-url:` - the URL for buttons for the app store
 
-`how-section:`
-  - `title:` "How it works"
-  - `features:`
-    - `img:` "images/download.png"
-      `title:` "1. Download PocketFlip"
-      `content:`
+`contact-url:` - the URL for the contact in the business and the connect sections
 
-'business-section:'
-  - 'title:' "User PocketFlip Business"
-    'lead:' "Engage your most loyal and enthusiastic users through PocketFlip’s innovative engagement platform."
-  - 'features:'
-    - 'img:' "#map-pin-icon"
-      'title:' "LocationBased Tasks"
-      'content:' "Run a LocationBased research to get accurate competitor pricing and POS information."
+`header:` - the landing header with the headline and images
 
-'connect-section:'
-  - 'title:' "Connect your audience"
-    'lead:' "Everybody loves FREE rewards. Your followers too."
-    'content:' "Present your audience with goodies, which they actually love. They can get them with PocketFlip for FREE and you can be certai: They’ll love your goodies."
+  - `title:` - title of the header
+
+  - `features:` - this is a list of the three columns 
+
+    - `img:` - the relative path to the image for the column
+
+    - `title:` - the headline for the column
+
+    - `content:` - the content for the column
+
+`how-section:` - the section explaining how it works
+
+  - `title:` - headline for this section
+
+  - `features:` - this is a list of the three columns
+
+    - `img:` - image for the specific column
+
+    - `title:` - headline for this column
+
+    - `content:` - for now, this is empty, but it's optional. Can be as content for column
+
+`business-section:` - the business section
+
+  - `title:` - title for the business section
+
+  - `lead:` - Lead just below the title of the section
+
+  - `features:` - this is a list of the three columns
+
+    - `img:` - the ID of the SVG icon loaded in the symbols partial
+
+    - `title:` - title of this column 
+
+    - `content:` - content for this column 
+
+`connect-section:` - the connect section
+
+  - `title:` - title for the connect section
+
+  - `lead:` - the lead content for the connect section
+
+  - `content:` - the main content for the connect section
 
 
 ---
