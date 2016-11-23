@@ -1,6 +1,5 @@
 ---
 layout: homepage
-baseurl: homepage
 app-store-url: "#"
 google-store-url: "#"
 contact-url: "#"

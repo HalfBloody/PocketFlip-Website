@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 ////////////////
 // COLORS //
@@ -15,8 +15,11 @@ $yellow:                                #fdac39;
 $light-light-gray:                      #f4f8fb;
 $light-dark-gray:                       #edf2f5;
 $gray:                                  #80888c;
+$footer-gray:                           #363b3d;
 $dark-gray:                             #354249;
+$darkish-gray:                          #414042;
 $green:                                 #25c306;
+$dirty-yellow:                          #fbb53a;
 
 
 // -----------------
@@ -60,6 +63,8 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Secondary font family
 $secondary-font-family: "Amatic SC", Helvetica, Arial, sans-serif !default;
+
+$opensans-font-family:  'Open Sans', sans-serif !default;
 
 
 $body-text-size:                        1.5rem;

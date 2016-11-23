@@ -40,7 +40,10 @@
     @extend .btn-with-spacing;
     @include button-outline($secondary-color, $inverted-color, fade-out($secondary-color, 1), $secondary-color);
 }
-
+.btn-yellow-outline {
+    @extend .btn-with-spacing;
+    @include button-outline($dirty-yellow, $inverted-color, fade-out($dirty-yellow, 1), $dirty-yellow);
+}
 .btn-inverted-outline {
     @extend .btn-with-spacing;
     @include button-outline($inverted-muted-color, $inverted-muted-color, fade-out($inverted-muted-color, 1), $inverted-muted-color);
@@ -89,4 +92,35 @@
 .btn-app-store-dark {
     @extend .btn-app-store;
     @extend .btn-dark;
+}
+.btn-group {
+    margin-top: 6.5rem;
+    a {
+        margin: 0 3rem;
+        @media (max-width: $screen-sm) {
+            margin: 0;
+        }
+    }
+}
+.store-btn {
+    width: 23.4rem;
+    height: 6.6rem;
+    background-size: contain;
+    display: inline-block;
+}
+.app-store-red {
+    @extend .store-btn;
+    background: url(../images/homepage/app-store-red.png) no-repeat;
+}
+.google-store-red {
+    @extend .store-btn;
+    background: url(../images/homepage/google_store_red.png) no-repeat;
+}
+.app-store-black {
+    @extend .store-btn;
+    background: url(../images/homepage/app-store-black.png) no-repeat;
+}
+.google-store-black {
+    @extend .store-btn;
+    background: url(../images/homepage/google-store-black.png) no-repeat;
 }

@@ -58,6 +58,7 @@
     .navbar-nav > li > a {
         color: $inverted-color;
         opacity: 0.6;
+        font-weight: bold;
 
         @include on-event {
             color: $inverted-color;

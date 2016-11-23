@@ -1,0 +1,14 @@
+<div class="benefits section">
+  <div class="container">
+    <h2 class="text-center">{{ page.benefits[0].title }}</h2>
+    <div class="row">
+      {% for feature in page.benefits[1].features %}
+        <div class="col-xs-12 col-sm-4 col-lg-4 text-center">
+          <img class="img-responsive" src="{{ site.baseurl }}/{{ feature.img }}" alt="{{ feature.title }} image" />
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.content }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
