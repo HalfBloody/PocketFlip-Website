@@ -7,7 +7,7 @@
 
 # Site settings
 title: PocketFlip
-logo-url: "images/logo-icon.svg"
+logo-url: "images/homepage/logo-icon.png"
 description: "Flip Tasks Into Free Rewards"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://www.pocketflip.com
