@@ -10,7 +10,7 @@ header:
 
 what-is-section:
   - header: What is PocketFlip?
-  - lead: Lorem ipsum dolor sit amet, mei et eros quaestio, ex vel postea noluisse delectus. Dicant maluisset te vis, ea mel tempor latine inermis. Et usu nullam nominati volutpat, dolorum posidonium quo cu. In omnis civibus splendide vix. Dolor solet malorum cu pro, an pri eleifend dissentiunt, quo te adhuc dicta consulatu.<br>Vix ex magna appareat. Ei constituto neglegentur consectetuer mea, vel ad nibh nostrum. Id laoreet blandit propriae mei, nobis aliquando nec ad, vero vidit complectitur nam te. Ea odio porro dissentias cum.
+  - lead: Lorem ipsum dolor sit.
   - img: "images/homepage/phone.png"
 
 how-section:

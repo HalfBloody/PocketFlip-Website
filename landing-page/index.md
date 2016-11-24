@@ -1,17 +1,17 @@
 ---
 layout: homepage
 baseurl: homepage
-app-store-url: "#"
-google-store-url: "#"
+app-store-url: "https://itunes.apple.com/us/app/pocketflip-free-gift-cards/id1176796106?ls=1&mt=8"
+google-store-url: "https://play.google.com/store/apps/details?id=com.digitalcentury.pocketflip"
 contact-url: "#"
 
 header:
   - title: "Simply Free Rewards"
-  - subtitle: "Complete small Tasks and get Free Gift Cards on your Phone"
+  - subtitle: "Complete simple Tasks and get Free Gift Cards on your Phone"
 
 what-is-section:
   - header: What is PocketFlip?
-  - lead: Lorem ipsum dolor sit amet, mei et eros quaestio, ex vel postea noluisse delectus. Dicant maluisset te vis, ea mel tempor latine inermis. Et usu nullam nominati volutpat, dolorum posidonium quo cu. In omnis civibus splendide vix. Dolor solet malorum cu pro, an pri eleifend dissentiunt, quo te adhuc dicta consulatu.<br>Vix ex magna appareat. Ei constituto neglegentur consectetuer mea, vel ad nibh nostrum. Id laoreet blandit propriae mei, nobis aliquando nec ad, vero vidit complectitur nam te. Ea odio porro dissentias cum.
+  - lead: "PocketFlip was started as a simple idea: we want you to get rewards for free. Not just any rewards, but almost every reward you can wish for: like iTunes, Amazon, Google Play, Steam, Xbox gift cards and we’re constantly adding more. What you'll have to do? Just collect free Coins inside the app. PocketFlip offers you a couple of simple ways to do that. Take a photo for one of our partners, download an app or fill out a survey. It's simple and quick.<br>Once your are as excited about PocketFlip as we are, there is another way to make money: invite your friends to PocketFlip and earn the big bucks. Our happiest users have invited many friend to the app. Try out PocketFlip and get your first Coins. We promise that you’ll be quite happy with your first reward."
   - img: "images/homepage/phone.png"
 
 how-section:
