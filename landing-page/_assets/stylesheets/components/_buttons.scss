@@ -96,9 +96,9 @@
 .btn-group {
     margin-top: 6.5rem;
     a {
-        margin: 0 3rem;
-        @media (max-width: $screen-sm) {
-            margin: 0;
+        margin: 0;
+        @media (min-width: $screen-sm) {
+            margin: 0 3rem;
         }
     }
 }

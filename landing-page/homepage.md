@@ -1,7 +1,7 @@
 ---
 layout: homepage
-app-store-url: "#"
-google-store-url: "#"
+app-store-url: "https://itunes.apple.com/us/app/pocketflip-free-gift-cards/id1176796106?ls=1&mt=8"
+google-store-url: "https://play.google.com/store/apps/details?id=com.digitalcentury.pocketflip"
 contact-url: "#"
 
 header:

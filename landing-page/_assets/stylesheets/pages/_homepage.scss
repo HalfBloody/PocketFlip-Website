@@ -94,8 +94,7 @@
             }
 
             @media only screen and (min-width: $screen-md) {
-                max-height: 17rem;
-                min-height: 14.5rem;
+                min-height: 11rem
             }
 
             @media only screen and (min-width: $screen-lg) {
@@ -104,8 +103,14 @@
         }
 
         h4 {
-            padding: 0 4.5rem;
             color: $darkish-gray;
+            @media only screen and (min-width: $screen-md) {
+                padding: 0 3.5rem;
+            }
+
+            @media only screen and (min-width: $screen-lg) {
+                padding: 0 4.5rem;
+            }
         }
     }
 }

@@ -3,13 +3,13 @@
 # main navbar links
 main:
   - title: "How it Works"
-    url: "#"
+    url: "#how-it-works"
 
   - title: "PocketFlip Business"
-    url: "#"
+    url: "#pocketflip-business"
 
   - title: "Become a Media Partner"
-    url: "#"
+    url: "#contact-us"
 
 # Footer navigation links
 footer:
