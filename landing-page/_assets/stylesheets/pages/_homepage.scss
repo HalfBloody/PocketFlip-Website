@@ -24,6 +24,7 @@
     background-color: $blue-background;
     background: url('../images/homepage/header_bg.jpg') no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: $extra-large-spacing + 6;
     padding-bottom: $extra-large-spacing + 3;
     color: $inverted-color;
@@ -82,23 +83,23 @@
         }
     }
 
-    .feature-box {
+    .homepage-feature-box {
         @extend .text-center;
-
         .img-responsive {
             margin: 0 auto;
-            min-height: 180px;
+            max-height: 12.2rem;
 
             @media only screen and (min-width: $screen-sm) {
-                max-height: 12rem;
+                min-height: 17rem;
             }
 
             @media only screen and (min-width: $screen-md) {
-                max-height: 15rem;
+                max-height: 17rem;
+                min-height: 14.5rem;
             }
 
             @media only screen and (min-width: $screen-lg) {
-                max-height: 18rem;
+                max-height: 15.2rem;
             }
         }
 
