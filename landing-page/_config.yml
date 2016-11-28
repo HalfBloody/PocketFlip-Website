@@ -10,14 +10,14 @@ title: PocketFlip
 logo-url: "images/homepage/logo-icon.png"
 description: "Flip Tasks Into Free Rewards"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://www.pocketflip.com
+url: http://www.pocketflip.net
 
 
 
 # Site Owner
 owner:
-  name: "Pocket Flip"
-  email: "info@pocketfilp.com"
+  name: "PocketFlip"
+  email: "help@pocketfilp.net"
   google:
     analytics:
     verify:
